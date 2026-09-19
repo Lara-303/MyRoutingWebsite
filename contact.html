@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Anchorline Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Literata:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-sheet="Sheet A-300 — Contact">
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo">ANCHORLINE<span>·</span></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="account.html" class="nav-cta-link">Client Access</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="wrap">
+    <p class="eyebrow">Get in touch</p>
+    <h1>Tell us about the project.</h1>
+    <p class="lede">The best first step is a 20-minute call. Send a few lines about what you're building and we'll reply within one business day.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap contact-grid">
+    <div>
+      <h3>Studio details</h3>
+      <ul class="spec-list mono">
+        <li><span class="k">Address</span><span class="v">118 Foundry Street, Suite 4B<br>Portland, OR 97209</span></li>
+        <li><span class="k">Email</span><span class="v">hello@anchorlinestudio.com</span></li>
+        <li><span class="k">Phone</span><span class="v">+1 (503) 555-0119</span></li>
+        <li><span class="k">Hours</span><span class="v">Mon–Thu, 9:00–5:00 PT</span></li>
+        <li><span class="k">Response time</span><span class="v">Within 1 business day</span></li>
+      </ul>
+
+      <div style="margin-top:40px;">
+        <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" style="width:100%; border-radius:16px; border:1px solid rgba(255,255,255,0.16);">
+          <defs>
+            <linearGradient id="mapGrad" x1="0" y1="0" x2="300" y2="180" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#1B1030"/>
+              <stop offset="1" stop-color="#0B0E1B"/>
+            </linearGradient>
+          </defs>
+          <rect width="300" height="180" fill="url(#mapGrad)"/>
+          <line x1="0" y1="60" x2="300" y2="60" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+          <line x1="0" y1="120" x2="300" y2="120" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+          <line x1="100" y1="0" x2="100" y2="180" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+          <line x1="200" y1="0" x2="200" y2="180" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+          <path d="M150 60 C160 75, 168 85, 150 100 C132 85, 140 75, 150 60 Z" fill="#EC4899"/>
+          <circle cx="150" cy="75" r="4" fill="#0B0E1B"/>
+          <text x="14" y="170" font-family="JetBrains Mono, monospace" font-size="9" fill="#8286A0">PORTLAND, OR — FOUNDRY DISTRICT</text>
+        </svg>
+      </div>
+    </div>
+
+    <div>
+      <form data-fake-submit>
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+          </div>
+          <div class="field">
+            <label for="budget">Project budget</label>
+            <select id="budget" name="budget">
+              <option>Under $25k</option>
+              <option>$25k – $75k</option>
+              <option>$75k – $150k</option>
+              <option>$150k+</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Project details</label>
+          <textarea id="message" name="message" placeholder="What are you building, and what would a good outcome look like in six months?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-note">Or skip the form — email hello@anchorlinestudio.com directly.</p>
+        <div class="form-success">Message received — we'll reply within one business day.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <div class="logo">ANCHORLINE<span>·</span></div>
+      <p>A brand and product studio for founders past the pitch deck.</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-heading">Studio</p>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-heading">Contact</p>
+      <a href="mailto:hello@anchorlinestudio.com">hello@anchorlinestudio.com</a>
+      <a href="tel:+15035550119">+1 (503) 555-0119</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-heading">Say hello</p>
+      <form class="footer-mini-form" data-fake-submit>
+        <input type="email" placeholder="you@work.com" aria-label="Email address" required>
+        <button type="submit">→</button>
+      </form>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 Anchorline Studio. All rights reserved.</span>
+    <div class="flinks"><a href="#">Instagram</a><a href="#">LinkedIn</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
