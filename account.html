@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Access — Anchorline Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Literata:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-sheet="Sheet A-400 — Client Access">
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo">ANCHORLINE<span>·</span></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="account.html" class="nav-cta-link" aria-current="page">Client Access</a>
+    </nav>
+  </div>
+</header>
+
+<div class="auth-shell">
+  <div class="auth-side">
+    <div>
+      <p class="eyebrow">Client portal</p>
+      <h1>Everything your project needs, in one place.</h1>
+      <p class="lede">Files, invoices, and project updates — the same portal we use internally, shared with you from day one of the engagement.</p>
+      <div class="auth-stats">
+        <div class="stat"><b>48</b><span>Projects delivered</span></div>
+        <div class="stat"><b>6 wk</b><span>Average engagement</span></div>
+        <div class="stat"><b>1 biz day</b><span>Response time</span></div>
+      </div>
+    </div>
+    <div class="auth-quote">
+      <p>"Being able to see every file and comment in one thread — instead of scattered across email — made the whole engagement feel a lot less risky."</p>
+      <cite>— Priya Shah, Kettleworks</cite>
+    </div>
+  </div>
+
+  <div class="auth-form-panel">
+    <div class="auth-card">
+      <div class="auth-tabs" role="tablist">
+        <button class="auth-tab" role="tab" aria-selected="true" data-target="loginPanel">Log in</button>
+        <button class="auth-tab" role="tab" aria-selected="false" data-target="signupPanel">Create account</button>
+      </div>
+
+      <div class="auth-panel active" id="loginPanel">
+        <form data-fake-submit>
+          <div class="field">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" name="email" required>
+          </div>
+          <div class="field">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" name="password" required>
+          </div>
+          <div class="auth-meta-row">
+            <label class="field-check"><input type="checkbox"> Remember me</label>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Log in</button>
+          <div class="form-success">Signed in — redirecting to your project dashboard.</div>
+        </form>
+      </div>
+
+      <div class="auth-panel" id="signupPanel">
+        <form data-fake-submit>
+          <div class="field">
+            <label for="signupName">Full name</label>
+            <input type="text" id="signupName" name="name" required>
+          </div>
+          <div class="field">
+            <label for="signupEmail">Email</label>
+            <input type="email" id="signupEmail" name="email" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="signupPassword">Password</label>
+              <input type="password" id="signupPassword" name="password" required>
+            </div>
+            <div class="field">
+              <label for="signupConfirm">Confirm password</label>
+              <input type="password" id="signupConfirm" name="confirm" required>
+            </div>
+          </div>
+          <div class="auth-meta-row">
+            <label class="field-check"><input type="checkbox" required> I agree to the terms of service</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Create account</button>
+          <div class="form-success">Account created — check your email to confirm access.</div>
+        </form>
+      </div>
+
+      <p class="form-note" style="text-align:center; margin-top:24px;">Client access is provisioned once a project agreement is signed.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
